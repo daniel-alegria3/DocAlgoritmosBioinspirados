@@ -1,25 +1,231 @@
 \maketitle
 
+\tableofcontents
+\newpage
+
 \section{Revision del paper}
 % TODO: Poner tema, autor, intitucion en la que se realizo y año de publicacion
-% \subsection{Tema}
-% \subsection{Autor}
-% \subsection{Institucion en la que se realizo}
-% \subsection{Año de publicacion}
+\subsection{Tema}
+Optimización basada en el comportamiento inteligente de las plantas con sus
+aplicaciones ingenieriles: Algoritmo Ivy
+
+\subsection{Autores}
+Mojtaba Ghasemi \textsuperscript{a}, Mohsen Zare \textsuperscript{b}, Pavel
+Trojovský \textsuperscript{c}, Ravipudi Venkata Rao \textsuperscript{d},
+Eva Trojovská \textsuperscript{c}, Venkatachalam Kandasamy \textsuperscript{c}
+
+\subsection{Instituciones en la que se realizo}
+\noindent\textsuperscript{a} Departamento de Electronica y Ingenieria Electrica, Universidad de Tecnologia de Shiraz, Shiraz, Iran \par
+\noindent\textsuperscript{b} Departamento de Ingenieria Electrica, Facultad de Ingenierica, Jahrom University, Jahrom, Iran \par
+\noindent\textsuperscript{c} Departamento de Mathematicas, Facultad de Ciencia, Universidad de kradec Králové, Rokitanského 62, Hradec Králové, Czech Republic \par
+\noindent\textsuperscript{d} Departamento of Ingenieria Mecanica, Instituto Nacional de Technologia Sardar Vallabhbhai, Ichchanath, Gujarat, Surat, India \par
+
+\subsection{Año de publicacion}
+Julio 8 del 2024
 
 \subsection{Identificacion del problema}
+Los algoritmos bioinspirados son en muchas ocaciones ineficientes en cuestion
+de rendimiento. Tomando mucho tiempo en obtener resultados esperados. Este
+estudio presenta una variante poderosa y novedosa de modelado de algoritmos
+bioinspirados, denominada algoritmo Ivy (IVYA), basada en los patrones de
+crecimiento de las plantas de hiedra. El algoritmo utiliza el conocimiento de
+plantas de hiedra cercanas para determinar la dirección de crecimiento. Las
+características únicas del IVYA, como la preservación de la diversidad
+poblacional, su simplicidad y flexibilidad, permiten una fácil modificación y
+extensión, lo que habilita a investigadores y profesionales a explorar diversas
+modificaciones y técnicas para mejorar su rendimiento y capacidades. Estos son
+aspectos fundamentales en la optimización de problemas de ingeniería. El IVYA
+se compara con diversos otros algoritmos, poniendo en prueba su rendimiento.
 
 \subsection{Objetivos}
+\begin{itemize}
+    \item Comparar los resultados del optimizador Ivy con diez optimizadores
+        metaheurísticos reconocidos, establecidos y novedosos, para ilustrar su
+        rendimiento y demostrar las ventajas de desarrollar este algoritmo.\par
+    \item Mostrar que, en contraste con los algoritmos comparativos, el enfoque
+        propuesto exhibe una mayor velocidad de optimización y una complejidad
+        computacional adecuada.\par
+    \item Demostrar que el nuevo enfoque supera a muchos algoritmos anteriores
+        mejorados en los resultados de optimización para funciones de prueba
+        estándar.\par
+    \item Evidenciar que el método propuesto posee mayor capacidad de
+        optimización y se adapta mejor a diversas tareas de optimización en
+        ingeniería, en comparación con otros algoritmos propuestos.\par
+\end{itemize}
 
 \subsection{Marco Teorico} % especifico del algoritmo bioinspirado
+Este trabajo se basa en dos conceptos importantes: los algoritmos de
+optimización basados en inteligencia artificial (IA) y la idea de que las
+plantas también pueden mostrar comportamientos inteligentes. Ambos temas son
+fundamentales para entender cómo se desarrolló el Ivy Algorithm (IVYA).
+
+\subsubsection*{Algoritmos de Optimización Bioinspirados e Inteligencia Artificial}
+Los algoritmos de optimización inspirados en IA buscan resolver problemas
+complejos encontrando la mejor solución posible, de forma similar a como los
+humanos o los sistemas naturales resuelven sus propios desafíos. Estos
+algoritmos exploran el espacio de búsqueda con métodos como el aprendizaje
+automático y la computación evolutiva. La gracia de estos enfoques es que se
+pueden adaptar con el tiempo a diferentes condiciones y restricciones, lo que
+los convierte en herramientas muy útiles en áreas como la ingeniería, las
+finanzas y la medicina. En estos campos, la automatización de decisiones y la
+optimización son fundamentales, y los algoritmos bioinspirados son una forma
+eficaz de lograrlo.
+
+\subsubsection{Inteligencia en Plantas como Inspiración para Algoritmos}
+Últimamente, se ha estudiado mucho cómo las plantas "piensan" o reaccionan a su
+entorno, y esto ha cambiado la percepción de que las plantas son pasivas. Las
+plantas pueden responder a cambios en el ambiente, adaptarse, y hasta aprender
+de ciertas experiencias, lo que algunos investigadores llaman "inteligencia en
+plantas". Este concepto ha inspirado el diseño de varios algoritmos, incluyendo
+el IVYA, que imita el comportamiento de las plantas trepadoras, como la hiedra.
+Así como la hiedra se expande y se adapta a diferentes entornos, el algoritmo
+simula estos mismos principios para mejorar la búsqueda de soluciones óptimas
+en problemas complejos.
+
+\subsubsection{Desafíos en Algoritmos Evolutivos}
+En los algoritmos evolutivos tradicionales, uno de los grandes problemas es la
+"convergencia prematura": cuando el algoritmo se "atasca" en una solución
+subóptima sin seguir explorando. Para evitar esto, se suelen utilizar ciertos
+términos que permiten mantener la diversidad en el conjunto de soluciones, lo
+cual es fundamental para no caer en óptimos locales. En el IVYA, esto se aborda
+con una ecuación de crecimiento que mantiene la diversidad de la "población"
+durante la optimización. Es decir, el algoritmo evita quedarse "encerrado" en
+una sola solución y sigue buscando otras posibilidades, lo que es especialmente
+útil en problemas de ingeniería donde las restricciones suelen ser complejas.
+
+\subsubsection{Aplicación del IVYA en Problemas de Ingeniería}
+El IVYA fue diseñado específicamente para problemas de optimización en
+ingeniería. Para manejar las restricciones de estos problemas, usa un enfoque
+de penalización estática, como se muestra en la ecuación incluida en el
+artículo. Básicamente, esta técnica permite que el algoritmo se adapte mejor a
+las limitaciones impuestas por el problema, haciendo que el IVYA sea más
+eficiente en su búsqueda de soluciones viables en aplicaciones reales.
 
 \subsection{Resultados} % mas relevantes
+l IVYA fue probado y comparado con diez algoritmos ampliamente conocidos en una
+variedad de funciones de prueba, incluyendo funciones unimodales, multimodales,
+variaciones clásicas y benchmarks con parámetros desplazados y rotados. En
+estas pruebas, el IVYA mostró un rendimiento competitivo, superando a otros
+algoritmos en varias de ellas. Esto confirma que el IVYA no solo alcanza una
+alta velocidad de convergencia, sino que también maneja eficazmente la
+diversidad poblacional, evitando así la convergencia prematura en óptimos
+locales, una ventaja importante en problemas de optimización complejos.
+
+Además, el IVYA demostró su capacidad para abordar problemas de optimización en
+ingeniería, gestionando las restricciones típicas de estos problemas mediante
+un enfoque de penalización estática. Esto sugiere un buen potencial de
+aplicación en entornos reales, donde se requieren algoritmos que sean tanto
+robustos como adaptables.
 
 \subsection{Critica del paper} % acerca de sus conclusiones
+El paper no trata de poner a prueba la eficacia de los resultados obtenidos por
+el algoritmo, solo se enfoca en el rendimiento de esta.
 
 \section{Informacion complementaria} % sobre el algoritmo bioinspirado
+
 \subsection{Conceptos adicionales} % no considerados en el paper
 % TODO: Poner, por ejemplo: Caracteristicas mas relevantes, ventajas y desventajas, etc
+Un aspecto que no se recalco en el texto fue la adaptabilidad de los algoritmos
+bioinspirados. Estos algoritmos tienen la capacidad de ajustarse a
+cambios en el entorno y a nuevas condiciones, lo que los hace especialmente
+útiles para resolver problemas dinámicos. Por ejemplo, los Algoritmos Genéticos
+aplican principios de selección natural para evolucionar soluciones a lo largo
+de múltiples generaciones, lo que permite una búsqueda más eficiente en
+espacios de soluciones complejos. Además, muchos de estos algoritmos operan
+dentro de un marco de procesamiento paralelo, lo que significa que pueden
+evaluar múltiples soluciones simultáneamente. Esta capacidad no solo mejora la
+eficiencia de la búsqueda, sino que también permite explorar un espacio de
+soluciones más amplio y diverso.
+
+En relación con la diversidad, los algoritmos bioinspirados suelen mantener un
+equilibrio entre la exploración de nuevas soluciones y la explotación de
+soluciones previamente identificadas. Este equilibrio es crucial para evitar
+caer en óptimos locales, un problema común en algoritmos de optimización más
+convencionales. Gracias a esta característica, los algoritmos bioinspirados son
+particularmente eficaces en problemas donde las técnicas tradicionales podrían
+ser inadecuadas, ofreciendo soluciones óptimas o casi óptimas en un tiempo
+razonable. También se destaca su escalabilidad, lo que permite su aplicación en
+una variedad de problemas, desde aquellos con pocos parámetros hasta los que
+requieren el manejo de grandes volúmenes de datos.
+
+No obstante, los algoritmos bioinspirados presentan ciertas desventajas. Uno de
+los principales inconvenientes es su convergencia lenta, especialmente en
+problemas complejos. Esto puede resultar en tiempos de ejecución prolongados,
+lo que no siempre es deseable en aplicaciones que requieren respuestas rápidas.
+Además, la eficacia de estos algoritmos a menudo depende de la adecuada
+selección de parámetros. Por ejemplo, en el caso de los algoritmos genéticos,
+la tasa de mutación es un factor crítico, y su calibración adecuada puede
+resultar un desafío que exige pruebas exhaustivas.
+
+Otra desventaja significativa es la incertidumbre en los resultados. Dado que
+estos algoritmos incorporan elementos aleatorios en su proceso de búsqueda, los
+resultados pueden variar entre diferentes ejecuciones. Esta variabilidad puede
+ser problemática en aplicaciones críticas donde la consistencia y la
+previsibilidad son esenciales.
 
 \subsection{Otras aplicaciones} % en la que se puede utilizar el algoritmo bioinspirado
+Debido a que el trabajo no se especificaba en una aplicacion especifica y es
+mas generio. Este podria tener aplicaciones en casi todas las ramas de la
+ciencia.
+
+El algoritmo IVYA se desarrolla en un
+contexto donde los algoritmos bioinspirados han demostrado ser útiles en una
+variedad de aplicaciones de optimización. La literatura existente, como se
+observa en estudios recientes que abordan la optimización mediante algoritmos
+híbridos, sugiere que IVYA podría ser adaptado para resolver problemas en
+múltiples dominios de optimizacion. Y varios trabajos ya citaron este paper.
+
+Por ejemplo, el trabajo titulado "A hybrid butterfly and Newton–Raphson swarm
+intelligence algorithm based on opposition-based learning" resalta la
+efectividad de los enfoques híbridos en problemas complejos de optimización, lo
+que indica que IVYA podría beneficiarse de estrategias similares. Esta
+característica híbrida podría facilitar su aplicación en áreas como la
+ingeniería mecánica y civil, donde se requiere la optimización de diseños
+complejos, como estructuras y mecanismos, garantizando no solo eficiencia sino
+también seguridad y funcionalidad.
+
+Además, el DHRDE (Dual-population hybrid update and RPR mechanism based
+differential evolutionary algorithm for engineering applications) demuestra la
+eficacia de utilizar poblaciones duales para mejorar la convergencia en
+problemas de optimización. Siguiendo esta línea, IVYA podría implementar
+estrategias de actualización dual, permitiendo que el algoritmo explore y
+explote soluciones de manera más efectiva. Esto podría ser particularmente útil
+en la optimización de sistemas dinámicos donde las condiciones cambian con
+frecuencia, como en la programación de sistemas de energía renovable, donde las
+variaciones en la producción de energía requieren ajustes constantes en las
+configuraciones.
+
+El estudio "A novel balanced teaching-learning-based optimization algorithm for
+optimal design of high efficiency plate-fin heat exchanger" también proporciona
+una referencia interesante. La optimización de intercambiadores de calor es un
+problema bien establecido en la ingeniería térmica, y IVYA podría aplicarse
+aquí, aprovechando su capacidad para realizar búsquedas intensivas en espacios
+de solución complejos. La combinación de técnicas de optimización puede
+permitir una mejora en la eficiencia térmica y la reducción de costos
+operativos.
+
+Por último, la investigación sobre el SDO (Sled Dog Optimizer) sugiere que los
+algoritmos inspirados en la naturaleza pueden ser altamente eficaces en el
+tratamiento de problemas complejos en diversas áreas. Al igual que el SDO, IVYA
+podría ser aplicado en la gestión de recursos naturales, como la planificación
+de rutas en logística y distribución, donde se requiere la minimización de
+costos y tiempos. Además, IVYA podría contribuir a la optimización en la
+producción agrícola, mejorando la asignación de recursos y aumentando los
+rendimientos.
+
+En conclusión, el algoritmo IVYA no solo se fundamenta en las bases de los
+algoritmos bioinspirados, sino que, al igual que los trabajos citados, ofrece
+un marco prometedor para ser adaptado y aplicado en diversas áreas, incluyendo
+la ingeniería, la gestión de recursos y la optimización de sistemas dinámicos.
+Su flexibilidad y capacidad de adaptación lo convierten en una herramienta
+valiosa para abordar los desafíos actuales en múltiples disciplinas.
+
+\section*{Fuentes}
+\label{sec:fuentes}
+\addcontentsline{toc}{section}{\nameref{sec:fuentes}}
+
+\begin{itemize}
+    \item \url{https://www.scopus.com/record/display.uri?eid=2-s2.0-85191987789&origin=resultslist&sort=plf-f&src=s&sid=a5db478061e4769d651f5acd42d1e033&sot=b&sdt=cl&cluster=scoexactkeywords%2C%22Bio-inspired+Algorithms%22%2Ct&s=TITLE-ABS-KEY%28bio-inspired+algorithm%29&sl=37&sessionSearchId=a5db478061e4769d651f5acd42d1e033&relpos=12}
+    \item \url{https://www.sciencedirect.com/science/article/abs/pii/S0950705124004842?via%3Dihub}
+\end{itemize}
 
